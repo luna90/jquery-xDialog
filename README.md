@@ -9,8 +9,8 @@ as "mouseover":
 		$.dialog({
 			'width'  : 200,
 			'height' : 280,
-			'DialogTit' : '标题1',
-			'DialogCon' : '内容1'
+			'DialogTit' : 'title',
+			'DialogCon' : 'content'
 		});
 	});
     
