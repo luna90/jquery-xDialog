@@ -5,7 +5,7 @@ include "jquery.xDialog.js" in your page,then you can use like this~
    
 as "mouseover":
     
-        $('your dialog dom').on('mouseover', function() {
+        $('your dialog dom').on('mouseover',function(){
 		$.dialog({
 			'width'  : 200,
 			'height' : 280,
@@ -16,7 +16,7 @@ as "mouseover":
     
 as "click":
     
-        $('your dialog dom').on('click', function() {
+        $('your dialog dom').on('click',function(){
 		$.dialog({
 			'width'  : 350,
 			'height' : 350,
