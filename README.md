@@ -9,8 +9,8 @@ as "mouseover":
 		$.dialog({
 			'width'  : 200,
 			'height' : 280,
-			'DialogTit' : 'title',
-			'DialogCon' : 'content'
+			'DialogTit' : 'your title',
+			'DialogCon' : 'your content'
 		});
 	});
     
