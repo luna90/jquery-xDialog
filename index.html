@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>jquery-xDialog弹出框插件</title>
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="jquery.xDialog.js"></script> 
+</head>
+<style>
+*{ margin:0; padding:0; font-size:12px; font-family:"微软雅黑";}
+body{background:#fbe6d4;}
+a{ text-decoration:none;}
+ul,ol,li{ list-style:none;}
+h3{ font-size:14px; color:#757574; margin:15px 0;}
+.clearfix:after{clear:both;height:0;overflow:hidden;display:block;visibility:hidden;content:".";}
+a,img{border:none;}
+
+/*公用样式*/
+#top{ width:100%; height:30px;line-height:30px; background:#807f7f;  text-indent:2em; color:#fff; font-weight:bold;}
+#top a{ color:#fff; float:right; padding-right:30px; font-size:14px;}
+#top a:hover{ color:#f67813;}
+#wrap{ width:250px; margin:120px auto;}
+#wrap ul li{ line-height:50px;}
+#wrap a{ font-size:20px; color:#666; }
+#wrap a:hover{ text-decoration:underline; color:#F60;}
+
+
+/*默认对话框样式*/
+.xDialog{ position:fixed; _position:absolute; z-index:1000;}
+.DialogCon{ border:8px solid #999; background:#fff;text-align:center; }
+.DialogTit{ line-height:60px;  font-size:15px; background:#cacac9; color:#fff; position:relative;}
+.DialogArea{ font-size:20px; line-height:200px;}
+.DialogClose{ position:absolute; right:10px; top:0; font-size:20px; color:#707070;}
+.DialogMask{ width:100%; height:100%;position:fixed; _position:absolute;top:0; left:0; background:#000; opacity:0.6; filter:alpha(opacity=60); }
+
+
+</style>
+<script type="text/javascript">
+$(function(){
+	
+	
+	$('#dialog1').on('mouseover', function() {
+		$.dialog({
+			'width'  : 200,
+			'height' : 280,
+			'DialogTit' : '标题1',
+			'DialogCon' : '内容1'
+		});
+	});
+	
+	$('#dialog2').on('click', function() {
+		$.dialog({
+			'width'  : 350,
+			'height' : 350,
+			'isLock' : true
+		});
+	});
+		
+})
+</script>
+<body style="height:2000px;">
+
+   <div id="top">jquery-xDialog弹出框插件<a href="http://www.lunali.net" target="_blank">www.lunali.net</a></div>
+   <!--标题 e -->
+
+   <div id="wrap">
+       <ul>
+          <li id="dialog1"><a href="javascript:void(0);">对话框——mouseover</a></li>
+          <li id="dialog2"><a href="javascript:void(0);">对话框——click</a></li>
+       </ul>
+       
+   </div>
+   
+   
+   
+</body>
+</html>
